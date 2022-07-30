@@ -7,13 +7,21 @@ const Layout = () => {
     <div className="App">
       <Sidebar />
       <div className="page">
-        <span className="tags top-tags">&lt;body&gt;</span>
+        <span className="tags top-tags">
+          using System;
+          <br/>
+          using System.Collections.Generic;
+          <br/>
+          using System.Linq;
+          <br/>
+          using System.UnityEngine;
+          </span>
 
         <Outlet />
         <span className="tags bottom-tags">
-          &lt;/body&gt;
+          void OnDestroy() &#123; 
           <br />
-          <span className="bottom-tag-html">&lt;/html&gt;</span>
+          <span className="bottom-tag-html">&#125;</span>
         </span>
       </div>
     </div>
